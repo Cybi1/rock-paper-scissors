@@ -1,29 +1,30 @@
-const rock = "rock";
-const paper = "paper";
-const scissors = "scissors";
-const allShapes = ["rock","paper","scissors"];
+const ROCK = "rock";
+const PAPER = "paper";
+const SCISSORS = "scissors";
+const ALL_SHAPES = [ROCK,PAPER,SCISSORS];
 
 function computerPlay() {   
-    let randomValue = Math.floor(Math.random() * allShapes.length);
-    return allShapes[randomValue];  
+    const randomValue = Math.floor(Math.random() * ALL_SHAPES.length);
+    return ALL_SHAPES[randomValue];  
 }
 
 function humanPlay() {
-    return prompt("Enter value:");  
+    let humanVal = prompt("Enter value:");
+    return humanVal;  
 }
 
-function roundPlay(allShapes, humanVal) {
-    if (allShapes == humanVal) {
+function roundPlay(ALL_SHAPES,humanVal) {
+    if (ALL_SHAPES == humanVal) {
         return("draw");
-    } else if ((allShapes === rock && humanVal === paper)||
-               (allShapes === paper && humanVal === scissors)||
-               (allShapes === scissors && humanVal === rock)) {
+    } else if ((ALL_SHAPES === ROCK && humanVal === PAPER)||
+               (ALL_SHAPES === PAPER && humanVal === SCISSORS)||
+               (ALL_SHAPES === SCISSORS && humanVal === ROCK)) {
         return("win");
     } else {
         return("lose"); 
     }
 }
     
-let result = roundPlay(allShapes(),humanVal());
+let result = roundPlay(computerPlay(),humanPlay());
 console.log(result);
 
