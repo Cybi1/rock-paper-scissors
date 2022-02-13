@@ -2,7 +2,6 @@ const rock = "rock";
 const paper = "paper";
 const scissors = "scissors";
 const allShapes = ['rock','paper','scissors'];
-let humanVal;
 
 function computerPlay() {   
     let rand = Math.floor(Math.random()*allShapes.length);
