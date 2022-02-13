@@ -10,8 +10,7 @@ function computerPlay() {
 }
 
 function humanPlay() {
-    let humanVal = prompt("Enter value:");
-    return humanVal;  
+    return prompt("Enter value:");  
 }
 
 function roundPlay(compVal, humanVal) {
