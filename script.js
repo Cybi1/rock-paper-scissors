@@ -1,7 +1,7 @@
 const rock = "rock";
 const paper = "paper";
 const scissors = "scissors";
-const allShapes = ['rock','paper','scissors'];
+const allShapes = ["rock","paper","scissors"];
 
 function computerPlay() {   
     let randomValue = Math.floor(Math.random()*allShapes.length);
