@@ -17,9 +17,9 @@ function humanPlay() {
 function roundPlay(compVal, humanVal) {
     if (compVal == humanVal) {
         return("draw");
-    } else if ((compVal === "rock" && humanVal === "paper")||
-               (compVal === "paper" && humanVal === "scissors")||
-               (compVal === "scissors" && humanVal === "rock")) {
+    } else if ((compVal === rock && humanVal === paper)||
+               (compVal === paper && humanVal === scissors)||
+               (compVal === scissors && humanVal === rock)) {
         return("win");
     } else {
         return("lose"); 
