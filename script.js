@@ -13,16 +13,15 @@ function humanPlay() {
 }
 
 function roundPlay(computerValue, humanValue) {
-    if (computerValue == humanValue) {
-        return("draw");
-    } else if ((computerValue === ROCK && humanValue === PAPER)||
-               (computerValue === PAPER && humanValue === SCISSORS)||
-               (computerValue === SCISSORS && humanValue === ROCK)) {
-        return("win");
-    } else {
-        return("lose"); 
-    }
-}
-    
+  if (computerValue === humanValue) return("draw");
+  if ((computerValue === ROCK && humanValue === PAPER) || 
+      (computerValue === PAPER && humanValue === SCISSORS) || 
+      (computerValue === SCISSORS && humanValue === ROCK)) {
+    return("win");
+  }
+
+  return("lose");
+} 
+
 let result = roundPlay(computerPlay(), humanPlay());
 console.log(result);
