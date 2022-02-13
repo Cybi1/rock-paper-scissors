@@ -4,8 +4,8 @@ const scissors = "scissors";
 const allShapes = ['rock','paper','scissors'];
 
 function computerPlay() {   
-    let rand = Math.floor(Math.random()*allShapes.length);
-    return allShapes[rand];  
+    let randomValue = Math.floor(Math.random()*allShapes.length);
+    return allShapes[randomValue];  
 }
 
 function humanPlay() {
