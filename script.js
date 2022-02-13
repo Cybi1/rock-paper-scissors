@@ -25,7 +25,6 @@ function roundPlay(compVal, humanVal) {
         return("lose"); 
     }
 }
-
     
 let result = roundPlay(compVal(),humanVal());
 console.log(result);
